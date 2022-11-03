@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Declaring variables in global
+        let nickName = "Triple G"
+
+        function firstClass() {
+            let firstName = "Benjamin";
+
+            function getNickName() {
+                return nickName;
+            }
+            let showsPlayed = {
+                'movieName': 'Game Shakers',
+                'name': getNickName(),
+                'age': 14,
+                'alias': nickName
+            }
+
+            return showsPlayed;
+        }
+
+        console.log(firstClass());
+
+        function secondClass() {
+            let secondName = "Flores"; // Declaring secondName in a function
+            console.log(firstName);
+        }
+        console.log(secondClass()); // ReferenceError: firstName is not defined.
+    </script>
+</body>
+
+</html>
