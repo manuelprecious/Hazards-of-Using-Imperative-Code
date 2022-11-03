@@ -1,4 +1,4 @@
-// creating myArray function for the prototype.
+// Implementing my own Array.prototype.map() using Array.prototype.myMap()
 
 Array.prototype.myMap = function(callback){
     let newArr = [];
@@ -10,10 +10,24 @@ Array.prototype.myMap = function(callback){
 }
 
 
-let myArray = [3, 8, 1, 3]
+let myArray = [3, 8, 1, 5]
 
 let s_array = myArray.myMap(item=>{
     return item + 2;
 });
 
 console.log(s_array);
+
+// Implementing my own Array.prototype.filter() method using Array.prototype.myFilter();
+
+Array.prototype.myFilter = function(callback){
+    let newArr = []
+
+    for (let i = 0; i < this.length; i++){
+        
+    }
+}
+
+let f_array = myArray.myFilter(item=>{
+    return item < 4;
+})
